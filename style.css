@@ -1,0 +1,68 @@
+body {
+    border: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Imagens/Fundo\ Home.jpg);
+    display: flex;
+}
+
+.container{
+    background-color: #f0f0eb;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.container menu{
+    
+}
+
+.logoTopo {
+    display: flex;
+    padding: 5px 0px 5px 20px;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    color: #555652;
+    text-decoration: none;
+}
+
+.login{
+    text-decoration: none;
+    color: #555652;
+}
+
+.logo{
+    
+}
+
+footer{
+
+}
+
+.footerIcons{
+    background-color: #40c5a1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 5px;
+}
+
+.copy{
+    display: flex;
+    color: #555652;
+    padding: 5px 0px 5px 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
