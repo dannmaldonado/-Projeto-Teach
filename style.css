@@ -62,7 +62,7 @@ body {
 }
 .imgMenino{
     display: flex;
-    width: 700px;
+    width: 100%;
 }
 
 form{
@@ -84,7 +84,7 @@ label{
 }
 
 fieldset{
-    width: 100%;
+    width: 80%;
     border: none;
     margin: 40px;
     padding: 10px;
