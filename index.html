@@ -20,49 +20,118 @@
                     <img src="./Logo/LogoMenu.png" alt="logo no cabeçalho da página">
                 </div>
                 <div class="menu">
-                    <a href="">Home</a>
-                    <a href="">Soluções e Recursos</a>
-                    <a href="">Clientes</a>
-                    <a href="">Planos</a>
-                    <a href="">Sobre Nós</a>
-                    <a href="">Contato</a>
+                    <a class="login" href="./index.html">Home</a>
+                    <a class="login" href="">Soluções e Recursos</a>
+                    <a class="login" href="">Clientes</a>
+                    <a class="login" href="">Planos</a>
+                    <a class="login" href="">Sobre Nós</a>
+                    <a class="login" href="">Contato</a>
                     <a class="login" href="./login.html">Log In</a>
-                    <!-- <ul>Home</ul>
-                    <ul></ul>
-                    <ul></ul>
-                    <ul></ul>
-                    <ul></ul>
-                    <ul></ul>
-                    <ul>Log In <a class="login" href="./login.html"></a></ul> -->
                 </div>
             </div>
 
-            <!-- <div class="logo">
+            <div class="logo">
                 <img src="./Logo/Logo.png" alt="Logo na cor laranja com livro verde">
-            </div> -->
+            </div>
 
         </section>
 
+    <!-- Aqui começa a pagina de contato. -->
+        <section class="contato">
+            <div class="menino">
+                <img class="imgMenino" src="./Imagens/Raising hand-cuate.png" alt="desenho de um menino levantando a mão pedindo ajuda em sala de aula">
+            </div>
+
+            <form action="">
+                <fieldset>
+                    <h2 class="faleconosco">Fale Conosco</h2>
+
+                    <div>
+                        <label>Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </div>
+                    <div class="estado">
+                        <label>Estado:</label>
+                        <select id="estado" name="estado">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </div>
+                    <div class="cidaderaiz">
+                        <label class="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div>
+                        <label>Motivo:</label>
+                        <input type="text" name="motivo" id="motivo">
+                    </div>
+                    <div>
+                        <label>Mensagem:</label>
+                        <input type="text" name="mensagem" id="mensagem">
+                    </div>
+                    <div class="btnEnviar">
+                        <button class="enviar">Enviar</button>
+                    </div>
+                    
+                </fieldset>
+            </form>
+
+        </section>
+
+    <!-- Aqui começa o rodapé. -->
+        
         <footer>
             <div class="footerIcons">
                 <div class="copy">
                     <p>© 2022 Teach - Todos os direitos reservados</p>
                 </div>
-                <div class="icons">
-                    <a href=""> <img src="./Icons/marker.png" alt="email"></a>
-                    <a href=""> <img src="./Icons/whatsapp.png" alt="whatsapp"></a>
-                    <a href=""> <img src="./Icons/instagram.png" alt="instagram"></a>
-                    <a href=""> <img src="./Icons/facebook.png" alt="facebook"></a>
-                    <a href=""> <img src="./Icons/phone-call.png" alt="telefone"></a>
-                    <a href=""> <img src="./Icons/envelope.png" alt="email"></a>
+                <div class="rodape">
+                    <a href=""> <img class="icons" src="./Icons/envelope.png" alt="email"></a>
+                    <a href=""> <img class="icons" src="./Icons/whatsapp.png" alt="whatsapp"></a>
+                    <a href=""> <img class="icons" src="./Icons/instagram.png" alt="instagram"></a>
+                    <a href=""> <img class="icons" src="./Icons/facebook.png" alt="facebook"></a>
+                    <a href=""> <img class="icons" src="./Icons/phone-call.png" alt="telefone"></a>
+                    <a href=""> <img class="icons" src="./Icons/marker.png" alt="localização"></a>
                 </div>
             </div>
         </footer>
-
-        <!-- Aqui começa a pagina de contato. -->
-
     </header>
-
-   
 </body>
 </html>
