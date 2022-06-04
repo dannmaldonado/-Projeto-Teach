@@ -57,7 +57,6 @@ body {
     display: flex;
     justify-content: flex-start;
     padding: 250px 0px 100px 150px;
-<<<<<<< HEAD
 }
 
 /* Aqui começa a página de contato. */
@@ -126,8 +125,6 @@ input{
     background-color: #555652;
     color: #f0f0eb;
     border-radius: 5px;
-=======
->>>>>>> cb52bde64257ea88a51873994d6c894fd1a9db03
 }
 
 button{
@@ -160,11 +157,7 @@ footer{
 }
 
 .rodape{
-<<<<<<< HEAD
     margin-right: 30px;
-=======
-    
->>>>>>> cb52bde64257ea88a51873994d6c894fd1a9db03
 }
 
 .icons{
