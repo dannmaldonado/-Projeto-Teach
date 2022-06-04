@@ -12,12 +12,11 @@ body {
     margin: 0;
     font-family: 'Dancing Script', cursive;
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* font-family: 'Open Sans'; */
 }
 
-header{
-    border: 0;
-    padding: 0;
-}
+/* Aqui começa a página inicial. */
+
 
 .home{
     width: 100%;
@@ -64,6 +63,84 @@ header{
     padding: 250px 0px 100px 150px;
 }
 
+/* Aqui começa a página de contato. */
+
+.contato{
+    display: flex;
+    width: 100%;
+}
+
+.menino{
+    width: 50%;
+}
+.imgMenino{
+    display: flex;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.faleconosco{
+    color: #555652;
+    text-align: center;
+    font-weight: 200;
+}
+
+label{
+    display: flex;
+    color: #555652;
+    margin: 5px;
+}
+
+fieldset{
+    width: 80%;
+    border: none;
+    margin: 40px;
+    padding: 10px;
+}
+
+input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #555652;
+    height: 30px;
+}
+
+#cidade{
+    width: 60%;
+}
+
+.cidade{
+    display: flex;
+}
+
+#mensagem{
+    height: 80px;
+}
+
+.enviar{
+    width: 20%;
+    margin: 10px;
+    padding: 5px;
+    background-color: #555652;
+    color: #f0f0eb;
+    border-radius: 5px;
+}
+
+button{
+    align-items: center;
+    border: none;
+}
+.btnEnviar{
+    text-align: center;
+}
+
+/* Aqui começa o rodapé. */
+
 footer{
     padding: 0;
     
@@ -86,7 +163,7 @@ footer{
 }
 
 .rodape{
-    padding: 0;
+    margin-right: 30px;
 }
 
 .icons{
