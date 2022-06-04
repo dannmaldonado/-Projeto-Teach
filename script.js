@@ -47,6 +47,7 @@ if(mensagem == ""){
     alert('Por Favor, Preencha como podemos te ajudar');
     return false;
 }
+};
 
 document.addEventListener("DOMContentLoaded", function(){
     let btnEnviar = document.querySelector("#btnEnviar");
@@ -64,4 +65,3 @@ document.addEventListener("DOMContentLoaded", function(){
     alert(`Obrigado por informar seu telefone  ${mask.unmaskedValue} no formato correto: ${mask.value}`);
     });
 });
-};
