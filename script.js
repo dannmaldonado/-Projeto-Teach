@@ -65,3 +65,4 @@ document.addEventListener("DOMContentLoaded", function(){
     alert(`Obrigado por informar seu telefone  ${mask.unmaskedValue} no formato correto: ${mask.value}`);
     });
 });
+// Comentário
