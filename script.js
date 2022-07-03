@@ -1,3 +1,5 @@
+console.log("Hello Word");
+
 function fncValida(){
 
 //encontrar o elemento na arvore DOM pelo ID e atribuir o valor do mesmo a uma variável  

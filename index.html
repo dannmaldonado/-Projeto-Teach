@@ -72,21 +72,23 @@
                 <fieldset class="">
                     <h2 class="faleconosco">Fale Conosco</h2>
 
-                    <div>
-                        <label for="txtNome">Nome:</label>
-                        <input type="text" name="txtNome" id="txtNome" placeholder="Digite seu nome completo aqui">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtNome" placeholder="Digite seu nome completo aqui">
+                        <label for="floatingInput">Nome:</label>
                     </div>
-                    <div>
-                        <label for="txtEmail">Email:</label>
-                        <input type="email" name="txtEmail" id="txtEmail" placeholder="seu@email.com">
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="txtEmail" placeholder="seu@email.com">
+                        <label for="floatingInput">Email:</label>
                     </div>
-                    <div>
-                        <label for="txtFone">Telefone:</label>
-                        <input type="tel" id="txtFone" name="txtFone" placeholder="(00) 00000-0000">
+
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="txtFone" placeholder="(00) 00000-0000">
+                        <label for="floatingInput">Telefone:</label>
                     </div>
-                    <div class="ddlUF">
-                        <label>Estado:</label>
-                        <select id="ddlUF" name="ddlUF">
+
+                    <div class="form-floating mb-3 ddlUF">
+                        <select class="form-control" id="ddlUF" name="ddlUF">
                             <option value="" selected="selected">Selecione</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -117,25 +119,26 @@
                             <option value="TO">Tocantins</option>
                             <option value="EX">Estrangeiro</option>
                         </select>
+                        <label for="floatingInput">Estado:</label>
                     </div>
-                    <div class="cidaderaiz">
-                        <label for="txtCidade" class="cidade">Cidade:</label>
-                        <input type="text" name="txtCidade" id="txtCidade" placeholder="Digite sua cidade">
-                    </div>
-                    <div>
 
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtCidade" placeholder="Digite sua cidade">
+                        <label for="floatingInput">Cidade:</label>
                     </div>
-                    <div>
-                        <label for="txtMotivo">Motivo:</label>
-                        <input type="text" name="txtMotivo" id="txtMotivo"
-                            placeholder="Digite aqui o motivo do seu contato">
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtMotivo" placeholder="Como podemos ajudar?">
+                        <label for="floatingInput">Motivo:</label>
                     </div>
-                    <div>
-                        <label for="txtMensagem">Mensagem:</label>
-                        <input type="text" name="txtMensagem" id="txtMensagem" placeholder="Digite aqui a sua mensagem">
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtMensagem" placeholder="Digite aqui sua mensagem">
+                        <label for="floatingInput">Mensagem:</label>
                     </div>
+
                     <div class="btnEnviar">
-                        <button class="enviar">Enviar</button>
+                        <button id="btnEnviar" class="enviar">Enviar</button>
                     </div>
                 </fieldset>
             </form>
