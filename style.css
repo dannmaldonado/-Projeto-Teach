@@ -1,94 +1,70 @@
 *,*::before,*::after{
     text-decoration: none;
-
 }
 
 /* Fonte */
 @font-face {
-    font-family: 'Open Sans';
-    src: url(./Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: 'Lato';
+    src: url(Fonts/Lato/Lato-Regular.ttf);
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap'); */
-
-
+/* Reset CSS e Font do Body*/
 body {
     border: 0;
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans';
-    /* font-family: 'Dancing Script', cursive; */
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    
+    font-family: 'Lato';
 }
 
-/* Aqui começa a página inicial. */
+/* Padrão de cores do Site */
+:root{
+    --verde:rgba(64, 197, 161); /* #40c5a1; */
+    --verdeTranspa:rgba(64, 197, 161, 0.7); /* Verde com Transparência para o rodapé*/
+    --azul:	rgba(41, 187, 227); /* #29bbe3; */
+    --laranja:rgba(245, 97, 84); /* #f56154; */
+    --Cinza:rgba(85, 86, 82); /* #555652; */
+    --Cinza-Claro:rgba(213, 215, 215); /* #d5d7d7; */
+    --Areia:rgba(240, 240, 235); /* #f0f0eb; */
+}
 
-
-.home{
+/* Plano de fundo da página inicial*/
+.home {
     width: 100%;
     height: 100vh;
-    background: url(./Imagens/Fundo\ Home.jpg) top no-repeat;
+    background: url(Imagens/Fundo\ Home.jpg) top no-repeat;
 }
 
-.container{
-    background-color: #f0f0eb;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
+/* Configuração da cor do fundo do menu superior*/
+.navbar-cunstom{
+    background-color: var(--Areia);
 }
 
-.container menu{
-    padding: 0;
+/* Configurações dos botões do menu fixo no top do site */
+.btn{
+    color: var(--Cinza);
+    background-color: var(--Cinza-Claro);
+    border-color: var(--Cinza-Claro);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: var(--laranja);
+    border-color: var(--laranja);
 }
 
-.logoTopo {
-    display: flex;
-    padding: 5px 0px 5px 20px;
-}
-
-.menu{
-    display: flex;
-    justify-content: flex-end;
-    color: #555652;
-    text-decoration: none;
-    align-items: center;
-    margin-right: 30px;
-}
-
-.login{
-    text-decoration: none;
-    color: #555652;
-    padding: 20px;
-}
-
+/* Logo da pagina home */
 .logo{
+    width: 90%;
+    height: auto;
     display: flex;
     justify-content: flex-start;
-    padding: 250px 0px 100px 150px;
+    padding: 18rem 0rem 7rem 6rem;
 }
 
 /* Aqui começa a página de contato. */
-
-.contato{
-    display: flex;
-    width: 100%;
-}
-
-.menino{
-    width: 50%;
-}
 .imgMenino{
     display: flex;
     width: 100%;
-}
-
-form{
-    display: flex;
-    align-items: center;
-    width: 50%;
+    padding: 2rem;
 }
 
 .faleconosco{
@@ -100,14 +76,13 @@ form{
 label{
     display: flex;
     color: #555652;
-    margin: 5px;
+    margin: 0.1rem;
 }
 
 fieldset{
-    width: 80%;
     border: none;
-    margin: 40px;
-    padding: 10px;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 input{
@@ -115,6 +90,12 @@ input{
     border-radius: 5px;
     border: 1px solid #555652;
     height: 30px;
+}
+
+::placeholder{
+    color: var(--Cinza);
+    padding: 5px;
+    font-size: 0.9rem;
 }
 
 #cidade{
@@ -126,7 +107,7 @@ input{
 }
 
 #txtMensagem{
-    height: 80px;
+    height: 6rem;
 }
 
 .enviar{
@@ -157,10 +138,8 @@ button{
 }
 
 /* Aqui começa o rodapé. */
-
 footer{
     padding: 0;
-    
 }
 
 .footerIcons{
@@ -173,6 +152,10 @@ footer{
     justify-content: space-between;
 }
 
+p{
+    margin: 0;
+}
+
 .copy{
     display: flex;
     color: #f0f0eb;
@@ -180,33 +163,10 @@ footer{
 }
 
 .rodape{
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .icons{
-    padding: 12px;
-    width: 26px;
+    padding: 5px;
+    width: 30px;
 }
-a{
-    text-decoration: none; 
-    color:rgba(85, 86, 82);
-}
-a:hover{
-    color: rgba(85, 86, 82);
-    font-size: large;
-    transition: .2s linear;
- }
- 
-.logo-footer{
-    padding: 0;
-    display: block;
-}
-.footerFlex{
-    background-color: #40c5a1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px;
-}
-

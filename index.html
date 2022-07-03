@@ -1,56 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS Local-->
     <link rel="stylesheet" href="style.css">
+
     <title>Teach</title>
-    <link rel="shortcut icon" href="./Icons/open-book.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Icons/open-book.png" type="image/x-icon" />
 
 </head>
 
 <body>
-    <script src="./script.js">  </script>
     <header>
+        <!-- Nav, parte referente ao menu fixo no topo da página, com botão toggle ao ficar menor -->
 
-        <!-- Esta sessão é referente a página Home -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-cunstom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="Logo/LogoMenu.png" alt="" width="80%" height="">
+                </a>
 
-        <section class="home">
-            <div class="container">
-                <div class="logoTopo">
-                    <img src="./Logo/LogoMenu.png" alt="logo no cabeçalho da página">
-                </div>
-                <div class="menu">
-                    <a class="login" href="./index.html">Home</a>
-                    <a class="login" href="">Soluções e Recursos</a>
-                    <a class="login" href="">Clientes</a>
-                    <a class="login" href="">Planos</a>
-                    <a class="login" href="">Sobre Nós</a>
-                    <a class="login" href=".contato">Contato</a>
-                    <a class="login" target="_blank" href="./login.html">Log In</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark">Soluções e Recursos</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark">Clientes</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark">Planos</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark">Sobre</a></li>
+                        <li><a href="#" class="nav-link px-2 link-dark">Contato</a></li>
+                    </ul>
+
+                    <div class="navbar-nav">
+                        <li><a href="login.html" class="nav-link px-2 link-dark">Login</a></li>
+                        <!-- <button type="button" class="btn btn-primary me-2">Login</button>
+                        <button type="button" class="btn btn-primary">Sign-up</button> -->
+                    </div>
                 </div>
             </div>
+        </nav>
 
+        <!-- Section, nessa parte do site estão a logo principal e a imagem de fundo -->
+        <section class="home container-fluid">
             <div class="logo">
-                <img src="./Logo/Logo.png" alt="Logo na cor laranja com livro verde">
+                <img class="img-fluid" src="./Logo/Logo.png"
+                    alt="Logo da empresa com a escrita Teach sua escola digital na cor laranja com o icone de um livro aberto na cor verde">
             </div>
-
         </section>
 
-    <!-- Aqui começa a pagina de contato. -->
-        <section class="contato">
-            <div class="menino">
-                <img class="imgMenino" src="./Imagens/Raising hand-cuate.png" alt="desenho de um menino levantando a mão pedindo ajuda em sala de aula">
+        <!-- Section, nessa parte temos a página de contato. -->
+        <section class="contato row">
+            <div class="menino col-sm-12 col-lg-6">
+                <img class="imgMenino" src="./Imagens/Raising hand-cuate.png"
+                    alt="Ilustarção de um menino de cor parda com uma camiseta verde em uma sala de aula com a mão esquerda levantada pedindo ajuda.">
             </div>
 
-            <form action="">
-                <fieldset>
+            <form class="col-sm-12 col-lg-6" action="">
+                <fieldset class="">
                     <h2 class="faleconosco">Fale Conosco</h2>
 
                     <div>
                         <label for="txtNome">Nome:</label>
-                        <input type="text" name="txtNome" id="txtNome" placeholder="digite seu nome completo aqui">
+                        <input type="text" name="txtNome" id="txtNome" placeholder="Digite seu nome completo aqui">
                     </div>
                     <div>
                         <label for="txtEmail">Email:</label>
@@ -96,76 +120,53 @@
                     </div>
                     <div class="cidaderaiz">
                         <label for="txtCidade" class="cidade">Cidade:</label>
-                        <input type="text" name="txtCidade" id="txtCidade" placeholder="digite sua cidade">
+                        <input type="text" name="txtCidade" id="txtCidade" placeholder="Digite sua cidade">
                     </div>
                     <div>
-                        
+
                     </div>
                     <div>
                         <label for="txtMotivo">Motivo:</label>
-                        <input type="text" name="txtMotivo" id="txtMotivo" placeholder="digite aqui o motivo do seu contato">
+                        <input type="text" name="txtMotivo" id="txtMotivo"
+                            placeholder="Digite aqui o motivo do seu contato">
                     </div>
                     <div>
                         <label for="txtMensagem">Mensagem:</label>
-                        <input type="text" name="txtMensagem" id="txtMensagem" placeholder="digite aqui a sua mensagem">
+                        <input type="text" name="txtMensagem" id="txtMensagem" placeholder="Digite aqui a sua mensagem">
                     </div>
                     <div class="btnEnviar">
                         <button class="enviar">Enviar</button>
                     </div>
-                    
                 </fieldset>
             </form>
 
         </section>
 
-    <!-- Aqui começa o rodapé. -->
-        
-        <footer>
-
-
-            <section>
-    
-                <section class="footerFlex">
-                    <div class="logo-footer">
-                        <img src="./Logo/Logo-Cinza.png" alt="Logo na cor laranja com livro verde" width="300" height="150">
-                    </div>
-                    <div>
-                        <a href="./index.html">Home</a>
-                    </div>
-                    <div>    
-                        <a href="">Soluções e Recursos</a>
-                    </div>
-                    <div>    
-                        <a href="">Clientes</a>
-                    </div>
-                    <div>
-                        <a href="">Planos</a>
-                    </div>
-                    <div>
-                        <a href="">Sobre Nós</a>
-                    </div>
-                    <div>
-                        <a href="">Contato</a>
-                    </div>
-            
-                </section>
-            </section>
-            
-
+        <!-- Footer, aqui começa o rodapé da nossa página. -->
+        <footer class="row">
             <div class="footerIcons">
                 <div class="copy">
                     <p>© 2022 Teach - Todos os direitos reservados</p>
                 </div>
                 <div class="rodape">
-                    <a href=""> <img class="icons" src="./Icons/envelope.png" alt="email"></a>
-                    <a href=""> <img class="icons" src="./Icons/whatsapp.png" alt="whatsapp"></a>
-                    <a href=""> <img class="icons" src="./Icons/instagram.png" alt="instagram"></a>
-                    <a href=""> <img class="icons" src="./Icons/facebook.png" alt="facebook"></a>
-                    <a href=""> <img class="icons" src="./Icons/phone-call.png" alt="telefone"></a>
-                    <a href=""> <img class="icons" src="./Icons/marker.png" alt="localização"></a>
+                    <a href=""> <img class="icons" src="Icons/envelope.png" alt="Icone de email"></a>
+                    <a href=""> <img class="icons" src="Icons/whatsapp.png" alt="Icone do app whatsapp"></a>
+                    <a href=""> <img class="icons" src="Icons/instagram.png" alt="Icone do app instagram"></a>
+                    <a href=""> <img class="icons" src="Icons/facebook.png" alt="Icone do app facebook"></a>
+                    <a href=""> <img class="icons" src="Icons/phone-call.png" alt="Icone de um telefone"></a>
+                    <a href=""> <img class="icons" src="Icons/marker.png" alt="Icone de localização"></a>
                 </div>
             </div>
         </footer>
+
     </header>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
