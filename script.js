@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // mask.on("complete", function () {
     // alert(`Obrigado por informar seu telefone  ${mask.unmaskedValue} no formato correto: ${mask.value}`);
     // });
-    
+
 });
 // Comentário
 
