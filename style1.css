@@ -1,23 +1,25 @@
 
+*,*::before,*::after{
+    text-decoration: none;
+}
 *, a{
     margin: 0 auto;
     padding: 4px;
-    text-decoration: none; 
     color:rgba(85, 86, 82);
     }
 
 /* Fonte */
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url(./Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: 'Lato';
+    src: url(Fonts/Lato/Lato-Regular.ttf);
 }
 
 body{
     border: 0;
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans';
+    font-family: 'Lato';
 }
 /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
  */
@@ -55,6 +57,7 @@ section{
 }
 
 .logo-login > div{
+    display: flex;
     margin-bottom: 10px;
     align-items: center;
 }
@@ -84,7 +87,7 @@ a{
     border-radius: 10px;
 }
 .campo-btn:hover{
-    font-size: 14px;
+    /* font-size: 14px; */
     color: var(--Areia);
     background-color: var(--laranja);
     width: 80px;
@@ -96,7 +99,7 @@ a{
 
  a:hover{
     color: var(--Cinza);
-    font-size: 15px;
+    /* font-size: 15px; */
  }
  
 @media (max-width:600px){
@@ -114,8 +117,14 @@ a{
 }
 
 
+/* Aqui começa o rodapé. */
+footer{
+    padding: 0;
+}
+
 .footerIcons{
-    background-color: var(--verdeTranspa);
+    border-top: 1px solid white;
+    background-color: #40c5a1;
     width: 100%;
     height: 60px;
     display: flex;
@@ -123,17 +132,21 @@ a{
     justify-content: space-between;
 }
 
+p{
+    margin: 0;
+}
+
 .copy{
     display: flex;
-    color: var(--Areia);
+    color: #f0f0eb;
     padding: 5px 0px 5px 20px;
 }
 
 .rodape{
-    padding: 0;
+    margin-right: 25px;
 }
 
 .icons{
-    padding: 12px;
-    width: 26px;
+    padding: 5px;
+    width: 30px;
 }
