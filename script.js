@@ -1,16 +1,14 @@
-console.log("Hello Word");
-
 function fncValida(){
 
 //encontrar o elemento na arvore DOM pelo ID e atribuir o valor do mesmo a uma variável  
 
-let nome = document.getElementById("txtNome").value;
+let nome = document.querySelector("#txtNome").value;
 let email = document.forms[0].txtEmail.value;
-let fone = document.formContato.txtFone.value;
+let fone = document.querySelector("txtFone");
 let uf = document.querySelector("#ddlUF");
-let cidade = document.getElementById("txtCidade").value;
-let motivo = document.getElementById("txtMotivo").value;
-let mensagem = document.getElementById("txtMensagem").value;
+let cidade = document.querySelector("txtCidade");
+let motivo = document.querySelector("txtMotivo");
+let mensagem = document.querySelector("txtMensagem");
 
 //se a variável não tem um texto preenchido
 if(nome == ""){
@@ -63,8 +61,10 @@ document.addEventListener("DOMContentLoaded", function(){
     };
     var mask = IMask(telMask, maskOptions);
     
-    mask.on("complete", function () {
-    alert(`Obrigado por informar seu telefone  ${mask.unmaskedValue} no formato correto: ${mask.value}`);
-    });
+    // mask.on("complete", function () {
+    // alert(`Obrigado por informar seu telefone  ${mask.unmaskedValue} no formato correto: ${mask.value}`);
+    // });
+    
 });
 // Comentário
+
