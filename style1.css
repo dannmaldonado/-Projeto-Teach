@@ -1,12 +1,15 @@
-
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     text-decoration: none;
 }
-*, a{
+
+*,
+a {
     margin: 0 auto;
     padding: 4px;
-    color:rgba(85, 86, 82);
-    }
+    color: rgba(85, 86, 82);
+}
 
 /* Fonte */
 
@@ -15,37 +18,46 @@
     src: url(Fonts/Lato/Lato-Regular.ttf);
 }
 
-body{
+body {
     border: 0;
     padding: 0;
     margin: 0;
     font-family: 'Lato';
 }
+
 /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
  */
-ul li{
+ul li {
     list-style-type: none;
- }
+}
 
 /* Padrão de cores do Site */
-:root{
-    --verde:rgba(64, 197, 161); /* #40c5a1; */
-    --verdeTranspa:rgba(64, 197, 161, 0.7); /* Verde com Transparência para o rodapé*/
-    --azul:	rgba(41, 187, 227); /* #29bbe3; */
-    --laranja:rgba(245, 97, 84); /* #f56154; */
-    --Cinza:rgba(85, 86, 82); /* #555652; */
-    --Cinza-Claro:rgba(213, 215, 215); /* #d5d7d7; */
-    --Areia:rgba(240, 240, 235); /* #f0f0eb; */
- }
- 
-section{
+:root {
+    --verde: rgba(64, 197, 161);
+    /* #40c5a1; */
+    --verdeTranspa: rgba(64, 197, 161, 0.7);
+    /* Verde com Transparência para o rodapé*/
+    --azul: rgba(41, 187, 227);
+    /* #29bbe3; */
+    --laranja: rgba(245, 97, 84);
+    /* #f56154; */
+    --Cinza: rgba(85, 86, 82);
+    /* #555652; */
+    --Cinza-Claro: rgba(213, 215, 215);
+    /* #d5d7d7; */
+    --Areia: rgba(240, 240, 235);
+    /* #f0f0eb; */
+}
+
+section {
+    height: 91vh;
     text-align: center;
     font-size: 16px;
     font: bold;
     color: var(--Cinza);
-   }
+}
 
- .grid {
+.grid {
     display: grid;
     grid-template-columns: 1fr 400px;
     grid-gap: 20px;
@@ -56,29 +68,31 @@ section{
     align-items: center;
 }
 
-.logo-login > div{
+.logo-login>div {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
     font: bold;
     color: var(--laranja);
     font-size: 14px;
- 
- }
- .login{
+
+}
+
+.login {
     font-size: 16px;
     margin: 0 auto;
     color: var(--laranja);
- }
- .campo{
-     font-size: 14px;
- }
+}
 
- .campo-btn{
+.campo {
+    font-size: 14px;
+}
+
+.campo-btn {
     font-size: 14px;
     color: var(--Areia);
     background-color: var(--Cinza);
@@ -86,31 +100,35 @@ a{
     border: 1px;
     border-radius: 10px;
 }
-.campo-btn:hover{
+
+.campo-btn:hover {
     /* font-size: 14px; */
     color: var(--Areia);
     background-color: var(--laranja);
     width: 80px;
     border-radius: 10px;
 }
- p{
-    font-size: 14px;
- }
 
- a:hover{
+p {
+    font-size: 14px;
+}
+
+a:hover {
     color: var(--Cinza);
     /* font-size: 15px; */
- }
- 
-@media (max-width:600px){
+}
+
+@media (max-width:600px) {
     .grid {
         grid-template-columns: 1fr;
     }
-    .logo-login{
+
+    .logo-login {
         display: flex;
         overflow: scroll;
-        }
-    .logo-login > div {
+    }
+
+    .logo-login>div {
         flex: 1 0 200px;
         margin: 0 10px;
     }
@@ -118,11 +136,11 @@ a{
 
 
 /* Aqui começa o rodapé. */
-footer{
+footer {
     padding: 0;
 }
 
-.footerIcons{
+.footerIcons {
     border-top: 1px solid white;
     background-color: #40c5a1;
     width: 100%;
@@ -132,21 +150,21 @@ footer{
     justify-content: space-between;
 }
 
-p{
+p {
     margin: 0;
 }
 
-.copy{
+.copy {
     display: flex;
     color: #f0f0eb;
     padding: 5px 0px 5px 20px;
 }
 
-.rodape{
+.rodape {
     margin-right: 25px;
 }
 
-.icons{
+.icons {
     padding: 5px;
     width: 30px;
 }
